@@ -40,7 +40,7 @@ h6 {
 }
 
 canvas#canvas {
-  background-color: #dbfeff;
+  background-color: #cecece;
   position: relative;
   width: 100%;
   height: 100%;
@@ -169,18 +169,14 @@ canvas#canvas {
 }
 
 
-#story-intro {
+.story-intro {
 	position: relative;
 	color:#fff;
 	padding:45px;
 	margin: 0 auto;
 	text-align: right;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
 }
-#story-intro img {
+.story-intro img {
 	position:absolute;
 }
 

@@ -44,10 +44,10 @@ onloadDo = function() {
     }
     return results;
   };
-  n = 2;
+  n = 1;
   opacity = 1 / (n * 1);
   for (i = j = 1, ref = n; j <= ref; i = j += 1) {
-    path = addPath(8 - i, '#0000ff', i * opacity);
+    path = addPath(8 - i, '#42859f', i * opacity);
     path.position.y += 25 * i;
     paths.addChild(path);
   }
