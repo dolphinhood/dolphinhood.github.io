@@ -93,7 +93,7 @@ canvas#canvas {
 }
 #menu-item:hover {
 	color:#fff;
-	background-image:url('../img/puffer.gif');
+	background-image:url('../img/pufferfish2.gif');
 	background-size:100% 100%;
 }
 #menu-item.active {
@@ -175,6 +175,7 @@ canvas#canvas {
 	padding:45px;
 	margin: 0 auto;
 	text-align: right;
+	margin-top: -7px;
 }
 .story-intro img {
 	position:absolute;
