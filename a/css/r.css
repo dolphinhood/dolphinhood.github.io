@@ -1,0 +1,263 @@
+
+@media (min-width: 1200px) {
+
+}
+@media (max-width: 767px) {
+  .navbar-fixed-top {
+    top: 0;
+    position: fixed;
+  }
+  h1 {
+    font-size:63px;
+  }
+  .dolphinhood.stay h1 {
+    display:inline-block;
+  }
+  .dolphinhood h1 {
+    font-size:63px;
+    line-height:72px;
+  }
+  .download_boxes {
+    font-size: 45px;
+  }
+  .about-show, .about-characters, .about-videos, .about-explore {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+  }
+  .navbar-nav > li > a {
+    line-height: 36px;
+    font-size: 27px;
+    text-decoration: none;
+  }
+
+  .credit-title {
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    margin-top:36px;
+  }
+  .credit-piece {
+    font-size: 24px;
+    line-height: 54px;
+  }
+  .credit-name {
+    font-size: 27px;
+    line-height: 36px;
+    text-align: center;
+  }
+  .credit-page .row {
+    margin-top: 27px;
+  }
+  .credit-space {
+    height: 297px;
+  }
+  .text-goto-collaborate {
+    text-align: center;
+    position: relative;
+    font-size: 36px;
+  }
+  .press_links a {
+    margin-top:27px;
+    display:block;
+  }
+  .next, .prev {
+    width:100%;
+    position:relative;
+  }
+  .charactername {
+    font-size:45px;
+  }
+  .musicname {
+    font-size:45px;
+  }
+  #updates .row {
+    margin-bottom: 0;
+  }
+  .individualpost {
+  }
+  .collab-piece {
+    font-size:63px;
+  }
+  li.dropdown-only {
+    display:inherit;
+  }
+  #sticker-sticky-wrapper {
+    height: 0!important;
+  }
+  .sociallink.more {
+    padding-top: 108px;
+    padding-bottom: 108px;
+  }
+  .download_boxes a {
+    display:block;
+    padding-top: 27px;
+  }
+  .download_boxes a:first-child {
+    padding-top:0;
+    padding-left:0;
+    padding-right:0;
+  }
+  .music-soundcloud, .music-download, .music-artwork {
+    font-size:72px;
+  }
+  .action_icon-l {
+    font-size:54px;
+  }
+  .summary-description {
+    font-size: 27px;
+    margin: auto 27px;
+    margin-bottom: 45px;
+    margin-top: 45px;
+  }
+	.summary-description {
+	font-size:36px;
+	}
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size:45px;
+    line-height:54px;
+  }
+  .dolphinhood h1 {
+    font-size:36px;
+    line-height:72px;
+  }
+  .download_boxes {
+  font-size: 27px;
+  }
+  .action_icon {
+  font-size: 27px;
+  }
+  .credit-title {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .credit-piece {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .credit-name {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .credit-page .row {
+    margin-top: 18px;
+  }
+  .credit-space {
+    height: 225px;
+  }
+  .collab-piece {
+    font-size:45px;
+  }
+  .about-piece {
+    font-size:27px;
+  }
+  .music-soundcloud, .music-download, .music-artwork {
+    font-size:45px;
+  }
+  .action_icon-l {
+    font-size:36px;
+  }
+  .individualPost {
+    height:360px;
+    margin-top:0;
+    margin-bottom:9px;
+  }
+  .videoname {
+  	font-size:54px;
+  }
+  .musicdescription {
+  	font-size:18px;
+  }
+	.summary-description {
+	font-size:27px;
+	}
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-fixed-top {
+    top: 0;
+    position: fixed;
+  }
+  .dolphinhood h1 {
+    font-size:90px;
+  }
+  .dolphinhood.stay h1 {
+    display:inline-block;
+  }
+  h1 {
+    font-size:90px;
+    line-height:108px;
+  }
+  .download_boxes {
+  font-size: 36px;
+  }
+  .download_boxes a {
+    margin-top:18px;
+  }
+  #updates .row {
+    margin-bottom: 0;
+  }
+  .individualpost {
+  }
+  .collab-piece {
+    font-size:90px;
+  }
+  #sticker-sticky-wrapper {
+    height: 0!important;
+  }
+  .about-show, .about-characters, .about-videos, .about-explore {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+  }
+  .sociallink.more {
+    padding-top: 108px;
+    padding-bottom: 108px;
+  }
+  .download_boxes a {
+    display:block;
+    padding-left:0;
+    padding-right:0;
+  }
+  .download_boxes a:first-child {
+    padding-top:0;
+  }
+  .individualPost {
+    height:630px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  h1 {
+    font-size:135px;
+    line-height:144px;
+  }
+  .download_boxes {
+  font-size: 36px;
+  }
+}
+@media (min-width: 1200px) {
+  .dolphinhood h1 {
+    font-size:180px;
+    line-height:180px;
+  }
+  .download_boxes {
+  font-size: 45px;
+  }
+  .charactername {
+    font-size:126px;
+  }
+  .musicname {
+    font-size:126px;
+  }
+  .music-soundcloud, .music-download, .music-artwork {
+    font-size: 207px;
+    line-height: 234px;
+  }
+  .individualPost {
+    height:525px;
+  }
+}
