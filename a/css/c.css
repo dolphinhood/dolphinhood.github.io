@@ -1,477 +1,942 @@
-@font-face { font-family: dh; font-weight: 100; src: url('../font/dolphinhood.ttf'); }
+@font-face { font-family: trans; font-weight: 100; src: url('../font/VeryHighSpeedTransport.otf'); }
 
-html {
-}
 
-body {
-	height:100%;
-	background-color:#fff;
-}
-p {
-	margin: 0;
-}
+  body.iftouch .navbar-fixed-top {
+    top: 0;
+    position: fixed;
+  }
+  body.iftouch .dolphinhood h1 {
+    display:none;
+  }
+  body.iftouch .dolphinhood.stay h1 {
+    display:inline-block;
+  }
 
-h1 {
-	font-size: 270px;
-	line-height: 243px;
-	letter-spacing:27px;
-	margin:0;
-}
-h4 {
-	font-size:90px;
-	line-height:90px;
-	margin:0;
-	letter-spacing:3px;
-	word-spacing:9px;
-}
-h6 {
-	font-size:27px;
-	line-height:27px;
-}
-::selection {
-  background: blue;
-  color:#fff;
-}
-::-moz-selection {
-  background: blue;
-  color:#fff;
-}
+@media screen {
+	div#preloader {
+		position: absolute;
+		left: -9999px;
+		top:  -9999px;
+		}
+	div#preloader img {
+		display: block;
+		}
+	}
+@media print {
+	div#preloader, 
+	div#preloader img {
+		visibility: hidden;
+		display: none;
+		}
+	}
+	#carousel-bounding-box {
+		height:100%;
+	}
+	.c_thumb {
+		font-size:27px;
+		border-right:solid 3px #fff;
+		padding:18px;
+	}
+	.c_thumb:hover {
+		cursor:pointer;
+	}
+	.c_thumb:last-child {
+		border-right:none;
+	}
+	#carousel-selector-0 .c_thumb {
+		padding-right: 36px; border-right: 1px solid #fff;
+	}
 
-canvas#canvas {
-  background-color: #fff;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.top {
-	width:100%;
-	height:auto;
-	position: fixed;
-	top:0;
-	z-index: 1060;
-	-webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-
-}
-.intropage .top.intro {
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-#dolphinhood {
-	background-image:url('../img/pufferfish.png');
-	background-size:36px 36px;
-	background-size: 36px;
-	width: 36px;
-	height: 36px;
-	margin: 18px auto;
-	text-align:center;
-	background-repeat: no-repeat;
-	cursor:pointer;
-}
-
-#menu { 
-	position: relative;
-	margin: 0 auto;
-	text-align: center;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-
-#menu-item {
-	color:#000;
-	width:100%;
-	text-align:center;
-}
-#menu-item:hover {
-	color:#fff;
-	background-image:url('../img/pufferfish2.gif');
+body.pufferfishbackground .content.content-collaborate {
+	background-image:url('../img/puffer.gif');
 	background-size:100% 100%;
+	background-repeat:no-repeat;
 }
-#menu-item.active {
-	color:#000;
-	text-decoration:line-through;
-	cursor:default;
+body.pufferfishbackground .content.content-about {
+	background-image:url('../img/puffer.gif');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
 }
-#menu-item.active:hover {
+body.pufferfishbackground .content.content-credits {
+	background-image:url('../img/puffer.gif');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+body.pufferfishbackground #fresh {
+	background-image:url('../img/puffer.gif');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+body.pufferfishbackground #updates {
+	background-image:url('../img/puffer.gif');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+body.preludebackground #fresh {
+	background-image:url('../../gifs/prelude.gif');
+	background-repeat:no-repeat;
+}
+body.albumbackground #fresh {
+	background-image:url('../img/static.gif');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+body.blackbackground #updates{
+	background-image:none;
+	background-color:#000;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+body.soundcloudbackground .content-music.content-sealevel,
+body.soundcloudbackground .content-music.content-allieverwanted,
+body.soundcloudbackground .content-music.content-splash {
+	background-color:#ff7700;
 	background-image:none;
 }
-.social {
-	width:100%;
-	position:fixed;
-	bottom:9px;
-	text-align: center;
+body.soundcloudbackground .music-download {
+	color:rgba(0,0,0,0.18);
 }
-.social a {
-  display:inline;
-  text-align: center;
-  font-size: 22.5px;
-  padding-left:18px;
-  padding-right:18px;
-  color:#000;
+body.tumblrbackground #updates {
+	background-color:#34526f;
+	background-image:none;
 }
-.social a:hover {
+
+input#mce-EMAIL {
+background-color: rgba(255,255,255,0);
+border: none;
+color:#fff;
+text-align:center;
+}
+input#mce-EMAIL:focus {
+	outline:none;
+}
+input#mc-embedded-subscribe {
+background-color: rgba(255,255,255,0);
+border: solid 3px #fff;
+padding: 0 27px;
+}
+
+#mc_embed_signup{
 	color:#fff;
 }
-
-.social-youtube-info,
-.social-soundcloud-info,
-.social-snapchat-info,
-.social-vine-info,
-.social-twitter-info,
-.social-instagram-info,
-.social-facebook-info,
-.social-github-info {
-	display:none;
-	color:#fff;
-}
-.social-snapchat-info h4 {
-	color:#000;
-	margin-top:90px;
-}
-.link-snapchat:hover {
-	cursor:n-resize;
-}
-.link-instagram:hover {
-	cursor:crosshair;
-}
-.link-github:hover {
-	cursor:help;
-}
-.link-facebook:hover {
-	cursor:no-drop;
-}
-.link-vine:hover {
-	cursor:progress;
-}
-.link-youtube:hover {
-	cursor:copy;
-}
-.link-soundcloud:hover {
-	cursor:context-menu;
-}
-.link-twitter:hover {
-	cursor:alias;
+	
+#updates {
+	background-image: url(../img/water2.gif);
+	background-size:100% 100%;
+	background-repeat:no-repeat;
 }
 
 
-
-.intro-link {
-	cursor:pointer;
+.updates-container iframe { 
+	width: 100%; 
+	height: 100%; 
 }
 
-
-.story-intro {
-	position: relative;
-	color:#fff;
-	padding:180px 0;
-	margin: 0 auto;
-	text-align: right;
-	margin-top: -7px;
-}
-.story-intro img {
-	position:absolute;
-}
-
-.pufferfish-s1 {
+.pufferfishbutton {
 	display:inline!important;
 }
-.pufferfish-s1:hover {
-	background-image: url('../img/pufferfish.png');
-	background-size: 36px;
-	background-repeat: no-repeat;
-	color: rgba(255,255,255,0);
-	cursor:url(../img/pufferfish.gif),auto;
-}
-.pufferfish-s2 {
-	background-size: 36px;
-	background-repeat: no-repeat;
-	cursor:url(../img/pufferfish.gif),auto;
-	bottom:0;
-	right:0;
-	color: rgba(255,255,255,0);
-	position: fixed;
-	height:36px;
-	width:36px;
-}
-.pufferfish-s2:hover {
-	background-image: url('../img/pufferfish.png');
-}
-.secret1-b {
-	position:fixed;
-	right:0;
-	top:0;
+.pufferfishbutton:hover {
 	background-image:url('../img/pufferfish.png');
-	background-size:36px 36px;
-	background-size: 36px;
-	width: 36px;
-	height: 36px;
-	margin: 18px;
-	z-index:9000;
-	opacity:0;
+	width:100%;
+	height:100%;
+	background-size:100% 100%;
+	z-index:100;
+	color:rgba(255,255,255,0);
+	cursor:pointer;
 }
-.secret1-b:hover {
-	opacity:100;
+h1 {
+	font-size:126px;
+	line-height: 135px;
+}
+h2 {
+	font-size:27px;
+	line-height:72px;
+}
+.content-credits {
+	background-image:url('../img/water2.gif');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
 }
 
-.question {
-	color:#000;  
-	height: 50%;
-	width: 100%;
+#fresh {
+	height:100%;
 	position:relative;
-	margin-top:90px;
 }
-.answers a{
-	height: 50%;
-	width: 100%;
+#fresh:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*background-image: url('../img/prelude.png'); */
+    width: 100%;
+    height: 100%;
+    opacity : 0.18;
+    z-index: -1;
+}
+#details {
+	text-align: center;
+	height:100%;
+}
+#links {
+}
+#characters {
+	margin-top:0;
+}
+.characters {
+	margin-top:0;
+}
+.music_list {
+	margin-top:0;
+}
+#updates {
+}
+#updates .row {
+}
+.character-info .row {
+}
+#footer:hover a {
+	text-decoration:none;
+}
+.legal {
+	text-align: center;
+	color: #fff;
+	font-size: 9px;
+	padding: 90px;
+}
+.press_links {
+	text-align:center;
+	margin:0 auto;
+	font-size:27px;
+	padding-top: 126px;
+}
+.about-text {
 	position:relative;
+	font-size: 45px;
+	text-align: center;
+	color:#fff;
+	z-index: 900;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.strike-l{
+    position: relative;
+}
+
+.strike-l::after{
+    content: '';
+	border-bottom: 36px solid white;
+	position: absolute;
+	left: 0;
+	top: 30.6%;
+	width: 100%;
+}
+.strike-l:hover {
+	border-bottom:0px;
+}
+.top-container {
+	height:100%;
+	position:relative;
+}
+.dolphinhood {
+	color:#fff;
+	position: relative;
+	margin:0 auto;
+	text-align:center;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.dolphinhood h1 {
+
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+.download_boxes {
+	margin-top:6.3%;
+	font-size:27px;
+
+    -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 6s; /* Firefox < 16 */
+        -ms-animation: fadein 6s; /* Internet Explorer */
+         -o-animation: fadein 6s; /* Opera < 12.1 */
+            animation: fadein 6s;
+}
+.download_boxes a {
+	display:inline;
+	text-decoration:none;
+	padding: 18px 36px;
+}
+.action_icon {
+	display:inline;
+	vertical-align: -6px;
+	font-size: 36px;
+}
+.action_icon-l {
+	display:inline;
+	font-size: 90px;
+}
+.action_words {
+	display:inline;
+	text-decoration:none;
+}
+.music-soundcloud, .music-download, .music-artwork {
+	font-size:126px;
+	line-height: 135px;
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+.music-download:hover {
 	color:#000;
 }
-.answer a:hover {
-	color:blue;
-}
-.drops {
-	width:100%;
-	height:auto;
-}
-
-.store {
-	width:100%;
-	height:100%;
-	position:relative;
-}
-.piece,
-.piece a {
-	width:50%;
-	height:50%;
-	position:relative;
-	display:inline-block;
-	margin:0;
-	padding:0;
-	border:0;
-	float:left;
-}
-.piece:hover {
-	background-color:#fff;
-}
-
-.drops-head {
-	padding: 90px;
-	text-align: left;
-	width: 50%;
-	position:fixed;
-	right: 0;
-}
-.drops-head p {
-	margin-top:36px;
-}
-.drops-head-piece1,
-.drops-head-piece2,
-.drops-head-piece3 {
-	display:none;
-}
-.drops-head-piece0.hover-drop-close {
-	display:none;
-}
-.drops-head-piece1.hover-drop-info,
-.drops-head-piece2.hover-drop-info,
-.drops-head-piece3.hover-drop-info {
-	display:block;
-}
-.drops-grid {
-	width:100%;
-}
-.drops-drop img {
-	width:50%;
-	display:block;
-}
-.drops-grid a {
-	cursor:pointer!important;
-}
-
-.mobile-social-box {
-  height: 25%;
-  width: 50%;
-  float: left;
-  display: inline-block;
-  position: relative;
-}
-.mobile-social-box i {
-	width:100%;
+.music-artwork {
 	color:#fff;
-	font-size:36px;
-	position: absolute;
-	margin: 0 auto;
-	text-align: center;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
+	text-align:center;
+	padding-top:45px;
 }
-.mobile-social-box.link-youtube {
-	background-color:#c4302b;
+.content-artwork {
+	padding-bottom: 90px;
 }
-.mobile-social-box.link-soundcloud {
-	background-color:#ff7700;
-}
-.mobile-social-box.link-snapchat {
-	background-color:#fffc00;
-}
-.mobile-social-box.link-vine {
-	background-color:#00a478;
-}
-.mobile-social-box.link-twitter {
-	background-color:#00acee;
-}
-.mobile-social-box.link-instagram {
-	background-color:#3f729b;
-}
-.mobile-social-box.link-facebook {
-	background-color:#3b5998;
-}
-.mobile-social-box.link-github {
-	background-color:#772b88;
-}
-.mobile-social-square1 {
-	background-color:#c4302b;
-}
-.mobile-social-square2 {
-	background-color:#ff7700;
-}
-.mobile-social-square3 {
-	background-color:#fffc00;
-}
-.mobile-social-square4 {
-	background-color:#00a478;
-}
-.mobile-social-square5 {
-	background-color:#00acee;
-}
-.mobile-social-square6 {
-	background-color:#3f729b;
-}
-.mobile-social-square7 {
-	background-color:#3b5998;
-}
-.mobile-social-square8 {
-	background-color:#772b88;
-}
-.mobile-social-square1,
-.mobile-social-square2,
-.mobile-social-square3,
-.mobile-social-square4,
-.mobile-social-square5,
-.mobile-social-square6,
-.mobile-social-square7,
-.mobile-social-square8 {
-	width:12.5%;
-	height:100%;
-	float:left;
-	display:inline-block;
-}
-
-.mobile-social-button {
-	width: 100%;
-	height: 54px;
-	position: absolute;
-	bottom: 0;
-	color: #fff;
-	text-align: center;
-	background-color: #000;
-}
-.mobile-social-button h6 {
-	position: relative;
-	margin: 0 auto;
-	text-align: center;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-.mobile-snapcode {
-	position:absolute;
+.content-artwork img {
 	width:100%;
+	padding:18px;
+}
+.download_boxes a:hover .action_words {
+	text-decoration:none;
+}
+
+.content.content-collaborate {
+	background-image:url('../img/static.gif');
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+}
+.content.content-music {
 	height:100%;
 }
-.mobile-snapcode img {
-	position:absolute;
-	margin: 0 auto;
-	left: 0;
-	right: 0;
+.content.content-music.content-sealevel {
+	background-image:url('../img/static.gif');
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+}
+.content.content-music.content-splash {
+	background-image:url('../img/art/splash-back.gif');
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+}
+.content.content-music.content-allieverwanted {
+	background-image:url('../img/art/allieverwanted-back.jpg');
+	background-repeat:no-repeat;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.content.content-about {
+	background-color:#000;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+.content.content-video {
+	background-image:none;
+	background-color:#000;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	height: 100%;
+}
+.collapse.in {
+ 	background-image:url('../img/static.gif');
+	background-repeat:no-repeat;
+}
+
+.blacklining {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	display: none;
+	text-align: center;
+	font-size: 180px;
+	line-height: 450px;
+	font-family:trans;
+	color:#fff;
+	}
+.individualpost:hover .blacklining {
+	display:inline-block;
+}
+
+.sociallink {
+	padding-top: 63px;
+	padding-bottom: 63px;
+	font-size: 27px;
+	text-align: center;
+	color:#ffffff;
+}
+.characterlink {
+	padding-top: 180px;
+	padding-bottom: 180px;
+	font-size: 45px;
+	text-align: center;
+	color:#ffffff;
+}
+.musiclink {
+	font-size: 45px;
+	text-align: center;
+	color:#ffffff;
+	height:450px;
+}
+.videolink {
+	font-size: 45px;
+	text-align: center;
+	color:#ffffff;
+	height:630px;
+}
+.charactername {
+	font-size:90px;
+	text-transform:uppercase;
+}
+.musicname {
+	font-size:90px;
+	text-transform:uppercase;
+	position:relative;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
 }
-.mobile-social {
-	display:none;
+.videoname {
+	font-size:90px;
+	text-transform:uppercase;
+	position:relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+}
+.musicdescription {
+	font-size:27px;
+	text-transform:lowercase;
+}
+.characterlink.milo:hover {
+	background-image:url('../img/characters/milo.png');
+}
+.characterlink.moses:hover {
+	background-image:url('../img/characters/moses.png');
+}
+.characterlink.suzie:hover {
+	background-image:url('../img/characters/suzie.png');
+}
+.characterlink.james:hover {
+	background-image:url('../img/characters/james.png');
+}
+.characterlink.ariel:hover {
+	background-image:url('../img/characters/ariel.png');
+}
+.characterlink.jeremiah:hover {
+	background-image:url('../img/characters/jeremiah.png');
+}
+.characterlink.kings:hover {
+	background-image:url('../img/characters/kings.jpg');
+}
+.characterlink.milo.always {
+	background-image:url('../img/characters/milo.png');
+}
+.characterlink.moses.always {
+	background-image:url('../img/characters/moses.png');
+}
+.characterlink.suzie.always {
+	background-image:url('../img/characters/suzie.png');
+}
+.characterlink.james.always {
+	background-image:url('../img/characters/james.png');
+}
+.characterlink.ariel.always {
+	background-image:url('../img/characters/ariel.png');
+}
+.characterlink.jeremiah.always {
+	background-image:url('../img/characters/jeremiah.png');
+}
+.characterlink.kings.always {
+	background-image:url('../img/characters/kings.jpg');
+}
+body.iftouch .characterlink.milo {
+	background-image:url('../img/characters/milo.png');
+}
+body.iftouch .characterlink.moses {
+	background-image:url('../img/characters/moses.png');
+}
+body.iftouch .characterlink.suzie {
+	background-image:url('../img/characters/suzie.png');
+}
+body.iftouch .characterlink.james {
+	background-image:url('../img/characters/james.png');
+}
+body.iftouch .characterlink.ariel {
+	background-image:url('../img/characters/ariel.png');
+}
+body.iftouch .characterlink.jeremiah {
+	background-image:url('../img/characters/jeremiah.png');
+}
+body.iftouch .characterlink.kings {
+	background-image:url('../img/characters/kings.jpg');
+}
+.musiclink.sealevel:hover {
+	background-image:url('../img/static.gif');
+}
+.musiclink.splash:hover {
+	background-image:url('../img/art/splash-back.gif');
+}
+.musiclink.allieverwanted:hover {
+	background-image:url('../img/art/allieverwanted-back.jpg');
+}
+.musiclink.sealevel.always {
+	background-image:url('../img/static.gif');
+}
+.musiclink.splash.always {
+	background-image:url('../img/art/splash-back.gif');
+}
+.musiclink.allieverwanted.always {
+	background-image:url('../img/art/allieverwanted-back.jpg');
+}
+.videolink.prelude:hover {
+	background-image:url('../../gifs/prelude.gif');
+}
+.videolink.splash:hover {
+	background-image:url('../../gifs/seaweed.gif');
+}
+.videolink.novelty:hover {
+	background-image:url('../../gifs/novelty.gif');
+}
+.videolink.prelude.always {
+	background-image:url('../../gifs/prelude.gif');
+}
+.videolink.splash.always {
+	background-image:url('../../gifs/seaweed.gif');
+}
+.videolink.novelty.always {
+	background-image:url('../../gifs/novelty.gif');
+}
+body.iftouch .musiclink.sealevel {
+	background-image:url('../img/static.gif');
+}
+body.iftouch .musiclink.splash {
+	background-image:url('../img/art/splash-back.gif');
+}
+body.iftouch .musiclink.allieverwanted {
+	background-image:url('../img/art/allieverwanted-back.jpg');
+}
+body.iftouch .videolink.prelude {
+	background-image:url('../../gifs/prelude.gif');
+}
+body.iftouch .videolink.splash {
+	background-image:url('../../gifs/seaweed.gif');
+}
+body.iftouch .videolink.novelty {
+	background-image:url('../../gifs/novelty.gif');
+}
+.summary-title {
+	background-image:url('../img/crew.jpg');
+}
+.goto-collaborate {
+	background-image: url('../img/static.gif');
+	height: 180px;
+	width: 100%;
+}
+.goto-credits {
+	background-color:#000;
+	background-size:100% auto;
+	height: 180px;
+	width: 100%;
+}
+.goto-collaborate .container, .goto-credits .container {
+	height:100%;
+}
+.text-goto-collaborate {
+	text-align: center;
+	position: relative;
+	font-size:45px;
+	color:#fff;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+}
+.credit-title {
+  font-size: 27px;
+  color: #ffffff;
+  text-align: right;
+  line-height: 72px;
+  text-align:right;
+  padding: 9px;
+}
+.credit-page {
+  padding-top:405px;
+  font-family:trans;
+}
+.credit-page .row {
+  margin-top:36px;
+}
+.credit-piece {
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  text-transform:uppercase;
+  padding-top:90px;
+}
+.credit-name {
+  font-size: 45px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 72px;
+  text-align:left;
+  text-transform:uppercase;
+  padding: 9px;
+}
+.credit-name a {
+  color:#ffffff;
+  }
+.credit-name a:hover {
+  color:#ffffff;
+  border-bottom:solid 2px #ffffff;
+}
+.credit-single .credit-name {
+  text-align:center;
+}
+.credit-single p {
+	margin-top:90px;
+}
+.credit-single p:first-child {
+	margin-top:45px;
+}
+.credit-space {
+  height:450px;
+  width:100%;
+}
+.credits-detail {
+  background-color:#000000;
+  height:300px;
+  width:100%;
+}
+.content-credits a {
+	text-decoration:none;
+}
+.content-credits {
+	color:#fff;
+	text-align:center;
+}
+.character-space {
+  height:180px;
+  width:100%;
+}
+.cruise {
+	width:100%;
+	position:relative;
+	bottom:0;
+	height:270px;
+}
+.next, .prev {
+	width:50%;
+}
+.next {
+	position:absolute;
+	right:0;
+}
+.prev {
+	position:absolute;
+	left:0;
+}
+.cruise-text {
+	text-align:center;
+	position:relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+}
+.text-next, .text-prev {
+	font-size:18px;
+	text-transform:lowercase;
+}
+.text-prev-character, .text-next-character {
+	text-transform:uppercase;
+	font-size:45px;
+	text-decoration:line-through;
+}
+.next:hover .text-next-character, .prev:hover .text-prev-character {
+	text-decoration:none;
+}
+.next.milo, .prev.milo {
+	background-image:url('../img/characters/milo.png');
+}
+.next.moses, .prev.moses {
+	background-image:url('../img/characters/moses.png');
+}
+.next.suzie, .prev.suzie {
+	background-image:url('../img/characters/suzie.png');
+}
+.next.james, .prev.james {
+	background-image:url('../img/characters/james.png');
+}
+.next.ariel, .prev.ariel {
+	background-image:url('../img/characters/ariel.png');
+}
+.next.jeremiah, .prev.jeremiah {
+	background-image:url('../img/characters/jeremiah.png');
+}
+.next.kings, .prev.kings {
+	background-image:url('../img/characters/kings.jpg');
 }
 
-body.hover-youtube #menu a,
-body.hover-soundcloud #menu a,
-body.hover-snapchat #menu a,
-body.hover-vine #menu a,
-body.hover-twitter #menu a,
-body.hover-instagram #menu a,
-body.hover-facebook #menu a,
-body.hover-github #menu a {
+.sociallink.soundcloud:hover {
+  background-color:#ff7700;
+}
+.sociallink.vine:hover {
+  background-color:#00a478;
+}
+.sociallink.tumblr:hover {
+  background-color:#34526f;
+}
+.sociallink.youtube:hover {
+  background-color:#c4302b;
+}
+.sociallink.instagram:hover {
+  background-color:#3f729b;
+}
+.sociallink.medium:hover {
+  background-color:#57ad68;
+}
+.sociallink.twitter:hover {
+  background-color: #00acee;
+}
+.sociallink.facebook:hover {
+  background-color: #3b5998;
+}
+.sociallink.store:hover {
+  background-color: #f052af;
+}
+.sociallink.email:hover {
+  background-color: #999;
+}
+.sociallink.google {
 	display:none;
 }
-body.modal-open.hover-close #social {
-	display:none;
+.sociallink.more {
+	color: #fff;
 }
-body.hover-youtube #menu .social-youtube-info {
-	display:inline-block;
+.sociallink.more:hover {
+	background-color:#34526f;
+	color: #fff;
 }
-body.hover-soundcloud #menu .social-soundcloud-info {
-	display:inline-block;
+#footer {
+	background-image:url('../img/static.gif');
 }
-body.hover-snapchat #menu .social-snapchat-info {
-	display:inline-block;
+#footer:hover {
+	background-image:none;
 }
-body.hover-vine #menu .social-vine-info {
-	display:inline-block;
+body.iftouch .sociallink.soundcloud {
+  background-color:#ff7700;
 }
-body.hover-twitter #menu .social-twitter-info {
-	display:inline-block;
+body.iftouch .sociallink.vine {
+  background-color:#00a478;
 }
-body.hover-instagram #menu .social-instagram-info {
-	display:inline-block;
+body.iftouch .sociallink.tumblr {
+  background-color:#34526f;
 }
-body.hover-facebook #menu .social-facebook-info {
-	display:inline-block;
+body.iftouch .sociallink.youtube {
+  background-color:#c4302b;
 }
-body.hover-github #menu .social-github-info{
-	display:inline-block;
-} 
+body.iftouch .sociallink.instagram {
+  background-color:#3f729b;
+}
+body.iftouch .sociallink.medium {
+  background-color:#57ad68;
+}
+body.iftouch .sociallink.twitter {
+  background-color: #00acee;
+}
+body.iftouch .sociallink.facebook {
+  background-color: #3b5998;
+}
+body.iftouch .sociallink.store {
+  background-color: #f052af;
+}
+body.iftouch .sociallink.email {
+  background-color: #999;
+}
+body.iftouch #footer {
+  background-image:url('../img/static.gif');
+}
 
-body.hover-youtube .modal-content {
-	background-color:#c4302b;
+.back {
+  position: fixed;
+  color: #ffffff;
+  top: 45px;
+  left: 45px;
+  z-index: 1000;
+  background-color:transparent;
+  font-family:trans;
 }
-body.hover-soundcloud .modal-content {
-	background-color:#ff7700;
+.collab-piece {
+  font-size: 126px;
+  color: #ffffff;
+  text-align: center;
+  text-transform:uppercase;
+  padding-top:90px;
 }
-body.hover-snapchat .modal-content {
-	background-color:#fffc00;
+.collab-piece a {
+  color:#ffffff;
 }
-body.hover-vine .modal-content {
-	background-color:#00a478;
+.collab-piece a:hover {
+  color:#000000;
 }
-body.hover-twitter .modal-content {
-	background-color:#00acee;
+.about-piece {
+  font-size: 72px;
+  color: #ffffff;
+  text-align: left;
+  text-transform:lowercase;
+  padding-top:90px;
 }
-body.hover-instagram .modal-content {
-	background-color:#3f729b;
+.about-piece-p {
+	margin-top:180px;
 }
-body.hover-facebook .modal-content {
-	background-color:#3b5998;
+.top-button {
+	padding: 27px;
+	border: solid 3px #fff;
+	border-radius: 18px;
+	font-size: 18px;
+	margin-top:90px;
+	text-decoration:none;
 }
-body.hover-github .modal-content {
-	background-color:#772b88;
+.top-button:hover {
+	background-color:#fff;
+	color:#000;
 }
+#updates {
+	font-size:27px;
+	color:#fff;
+}
+#about p {
+	margin: 90px auto;
+}
+
+.about-show {
+	width:33.3333333%;
+	background-image:url('../img/about-music.png');
+	float:left;
+	left: 0;
+}
+.about-characters {
+	width:33.3333333%;
+	background-image:url('../img/about-characters.png');
+	float:left;
+	right: 0;
+}
+.about-videos {
+	width:33.3333333%;
+	background-image:url('../img/about-video.png');
+	float:left;
+	background-position:center right;
+	left: 0;
+}
+.about-explore {
+	width:25%;
+	background-image:url('../img/about-explore.png');
+	float:left;
+	right: 0;
+}
+.about-show:hover .about-text, .about-videos:hover .about-text, .about-explore:hover .about-text, .about-characters:hover .about-text {
+	text-decoration:none;
+}
+#details:hover .about-characters, #details:hover .about-videos, #details:hover .about-explore, #details:hover .about-show { 
+	background-image: none; 
+}
+#details:hover .about-characters:hover { 
+	background-image: url('../img/about-characters.png'); 
+}
+#details:hover .about-show:hover { 
+	background-image: url('../img/about-music.png'); 
+}
+#details:hover .about-videos:hover { 
+	background-image: url('../img/about-video.png'); 
+}
+#details:hover .about-explore:hover { 
+	background-image: url('../img/about-explore.png'); 
+}
+li.dropdown-only {
+	display:none;
+}
+.summary-description {
+margin-bottom:90px;
+margin-top: 90px;
+font-size:45px;
+text-align:center;
+}
+.summary-description a {
+	padding-top:90px;
+	text-decoration:underline;
+}
+.summary-links {
+	margin: auto 15px;
+	margin-bottom:108px;
+}
+.summary-links a {
+	padding-top:36px;
+	position:relative;
+	display:block;
+	color:#000;
+}
+.individualPost {
+	height:450px;
+	margin-top:18px;
+	margin-bottom:27px;
+}
+.video_title {
+	font-size:63px;
+}
+ul.list-inline {
+text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .collab-piece {
+	font-size: 180px;
+	}
+
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
