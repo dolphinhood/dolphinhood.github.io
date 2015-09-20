@@ -12,9 +12,9 @@ p {
 }
 
 h1 {
-	font-size: 270px;
-	line-height: 243px;
-	letter-spacing:27px;
+	font-size: 180px;
+	line-height: 153px;
+	letter-spacing:9px;
 	margin:0;
 }
 h4 {
@@ -95,12 +95,7 @@ canvas#canvas {
 	background-size:100% 100%;
 }
 #menu-item.active {
-	color:#000;
-	text-decoration:line-through;
 	cursor:default;
-}
-#menu-item.active:hover {
-	background-image:none;
 }
 .social {
 	width:100%;
@@ -167,16 +162,13 @@ canvas#canvas {
 }
 
 
-.story-intro {
+#story-intro {
 	position: relative;
 	color:#fff;
 	padding:180px 0;
 	margin: 0 auto;
 	text-align: right;
 	margin-top: -7px;
-}
-.story-intro img {
-	position:absolute;
 }
 
 .pufferfish-s1 {

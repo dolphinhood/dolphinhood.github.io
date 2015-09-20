@@ -80,9 +80,7 @@ G#H,rsiSB@@#####@###BBM#@@###G5;;riX3X22555ir;;;:,,:::::;SB3G#@@#@@@@BHh2ir;::::
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="a/ico/touch_icon_114.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="a/ico/touch_icon_72.png">
         <link rel="apple-touch-icon-precomposed" href="a/ico/touch_icon_57.png">
-        <!--<script src="http://code.jquery.com/jquery-latest.js"></script>-->
-        <script src="a/js/jquery.js"></script>
-        <script src="a/js/c.js"></script>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -92,19 +90,25 @@ G#H,rsiSB@@#####@###BBM#@@###G5;;riX3X22555ir;;;:,,:::::;SB3G#@@#@@@@BHh2ir;::::
             ga('send', 'pageview');
         </script>                            
     </head>
-    <body class="intropage" style="background-color:#000;">
+    <body style="background-color:#fff;">
+
 
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div id="menu">
-                        <a href="drops.html">
+                        <a href="music.html">
                             <div id="menu-item">
-                                <h1>drops</h1>
+                                <h1>music</h1>
                             </div>
                         </a>
-                        <a href="story.html">
+                        <a href="video.html">
                             <div id="menu-item">
+                                <h1>video</h1>
+                            </div>
+                        </a>
+                        <a data-dismiss="modal">
+                            <div id="menu-item" class="active">
                                 <h1>story</h1>
                             </div>
                         </a>
@@ -119,7 +123,7 @@ G#H,rsiSB@@#####@###BBM#@@###G5;;riX3X22555ir;;;:,,:::::;SB3G#@@#@@@@BHh2ir;::::
                             <h4>user: dolphinhood</h4>
                         </div>
                         <div class="social-vine-info">
-                            <h4>ADHD</h4>
+                            <h4>shorts</h4>
                         </div>
                         <div class="social-twitter-info">
                             <h4>crew updates</h4>
@@ -131,7 +135,7 @@ G#H,rsiSB@@#####@###BBM#@@###G5;;riX3X22555ir;;;:,,:::::;SB3G#@@#@@@@BHh2ir;::::
                             <h4>parents, aunts, and uncles</h4>
                         </div>
                         <div class="social-github-info">
-                            <h4>fork it</h4>
+                            <h4>fork</h4>
                         </div>
 
                     </div>
@@ -175,18 +179,48 @@ G#H,rsiSB@@#####@###BBM#@@###G5;;riX3X22555ir;;;:,,:::::;SB3G#@@#@@@@BHh2ir;::::
             </div>
         </div>
 
-        <div class="top intro">
+
+
+        <img src="a/img/water4.gif" width="100%" height="400px" style="margin-top:360px;">
+
+        <div class="top">
             <div id="dolphinhood" data-toggle="modal" data-target="#myModal"></div>
         </div>
 
-        <div class="pufferfish-s2">
-        .
+        <div id="story-intro" style="background-color:#0000ff;">
+
+            <h4 class="story-block">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </h4>
+            <div class="sticky-wrapper">
+                <div class="stick">
+                <img src="a/img/milo.png" height="900px">
+                </div>
+                <h4 class="story-block">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </h4>
+            </div>
+            <div class="unsticker">
+                <h4 class="story-block">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </h4>
+            </div>
+            <h4 class="story-block">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </h4>
+
         </div>
 
+        <div id="container-t"></div>
 
+        <script src="a/js/w.js"></script>
         <script src="a/js/b.js"></script>
         <script src="a/js/c.js"></script>
+        <script src="a/js/s.js"></script>
         <script>
+          $(document).ready(function(){
+            $(".stick").stick_in_parent();
+          });
         </script>
     </body>
 </html>
