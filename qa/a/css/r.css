@@ -1,8 +1,6 @@
-.iftouch .mobile-social {
-	display:inline;
-}
-.iftouch .social {
-	display:none;
+
+.iftouch .url-name i {
+	color:#fff;
 }
 
 @media (min-width: 1200px) {
@@ -30,6 +28,19 @@
 	#menu-item {
 		font-size:63px;
 		line-height:90px;
+	}
+	.mobile-social-box {
+	  height: 33.3333333%;
+	  width: 100%;
+	  float: left;
+	  display: inline-block;
+	  position: relative;
+	}
+	.social a {
+		font-size:27px;
+	}
+	.social-container {
+		margin-top:90px;
 	}
 
 }

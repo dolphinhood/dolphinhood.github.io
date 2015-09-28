@@ -11,6 +11,9 @@
         $(".link-youtube").hover(function () {
         $('body').toggleClass('hover-youtube');
         });
+        $(".link-apple").hover(function () {
+        $('body').toggleClass('hover-apple');
+        });
         $(".link-soundcloud").hover(function () {
         $('body').toggleClass('hover-soundcloud');
         });
@@ -26,11 +29,17 @@
         $(".link-instagram").hover(function () {
         $('body').toggleClass('hover-instagram');
         });
+        $(".link-more").hover(function () {
+        $('body').toggleClass('hover-more');
+        });
         $(".link-facebook").hover(function () {
         $('body').toggleClass('hover-facebook');
         });
         $(".link-github").hover(function () {
         $('body').toggleClass('hover-github');
+        });
+        $("#dolphinhood").hover(function () {
+        $('body').toggleClass('puffer');
         });
 
         $(".drops-drop .img-d1").hover(function () {
