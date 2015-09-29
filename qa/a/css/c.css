@@ -477,7 +477,7 @@ canvas#canvas {
 .drops {
 	width:100%;
 }
-/*
+
 .drops.section-entrance {
     -webkit-animation-delay: 3.6s;
     -webkit-animation-duration: 1s;
@@ -654,7 +654,6 @@ canvas#canvas {
         opacity: 1;
     }
 }
-*/
 .drop1 {
 
 }
