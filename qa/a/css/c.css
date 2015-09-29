@@ -721,6 +721,10 @@ canvas#canvas {
 .drop-credits:hover {
 	border-bottom:solid 2px #fff;
 }
+.merch {
+	width:100%;
+	height:auto;
+}
 
 body.hover-youtube #menu a,
 body.hover-google #menu a,
