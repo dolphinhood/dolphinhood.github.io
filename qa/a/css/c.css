@@ -474,10 +474,73 @@ canvas#canvas {
 	display:none;
 }
 
+/*---------------------------------
+drops
+----------------------------------*/
 .drops {
 	width:100%;
 }
+.drop-t {
+	height:100%;
+	width:100%;
+	color:#fff;
+	font-size:1.8em;
+}
+.drop-t-j {
+	float:left;
+	width:25%;
+	height:100%;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	background-image:url('../img/novelty.png'); 
+	background-position:center center;
+     -webkit-background-size: cover;
+  	    -moz-background-size: cover;
+  	      -o-background-size: cover;
+  		     background-size: cover;
+}
+.drop-t-e {
+	float:left;
+	width:50%;
+	height:100%;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	background-color:green;
+}
+.drop-t-m {
+	float:left;
+	width:25%;
+	height:100%;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	background-color:yellow;
+}
+.drop-d {
+	width:100%;
+	height:auto;
+}
+.drop-d-text {
+	color:#fff;
+	width:66.666666666%;
+	float:left;
+}
+.drop-d-stats {
+	color:#fff;
+	width:33.333333333%;
+	float:left;
+}
+.drop-d-title {
+	font-size:4.5em;
+}
+.drop-d-p {
+	font-size:1.8em;
+	text-align: justify;
+}
 
+/*
 .drops.section-entrance {
     -webkit-animation-delay: 3.6s;
     -webkit-animation-duration: 1s;
@@ -654,76 +717,19 @@ canvas#canvas {
         opacity: 1;
     }
 }
-.drop1 {
+*/
 
-}
-.drops-side {
-	background-color:#000;
-	color:#fff;
-	width:33.33333333%;
-	height:auto;
-	float:left;    
-	height: auto;
-    float: left;
-    padding-right: 90px;
-    padding-top: 180px;
-    text-align:right;
-}
-.drops-content {
-	background-color:#fff;
-	color:#000;
-	width:66.66666666%;
-	height:auto;
-	float:right;
-	padding-left:90px;
-	padding-top:180px;
-}
-.drop1-side {
-
-}
-.drop1-content {
-
-}
-.drop-title {
-	font-size:90px;
-	font-weight:bolder;
-}
-.drop-head {
-	font-size:117px;
-	font-weight:bolder;
-}
-.drop-body {
-	padding-top: 36px;
-	font-size:27px;
-	font-weight:lighter;
-}
-.drop-number {
-
-}
-.drop-title {
-	font-size:36px;
-}
-.drop-info {
-	margin-top:45px;
-}
-.drop-samples,
-.drop-credits {
-	margin-top:9px;
-}
-.drop-info,
-.drop-samples,
-.drop-credits {
-	border-bottom:solid 2px #000;
-}
-.drop-info:hover,
-.drop-samples:hover,
-.drop-credits:hover {
-	border-bottom:solid 2px #fff;
-}
+/*---------------------------------
+merch
+----------------------------------*/
 .merch {
 	width:100%;
 	height:auto;
 }
+
+/*---------------------------------
+effects
+----------------------------------*/
 
 body.hover-youtube #menu a,
 body.hover-google #menu a,
